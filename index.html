@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PvpOne</title>
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/map.css">
+
+</head>
+<body class="disableSelection" onload="onGameLoad();">
+    <div id="display">
+
+    </div>
+    <script src="app/localdatabase.js"></script>
+    <script src="app/__objects.js"></script>
+    <script src="app/jquery.js"></script>
+    <script src="app/player.js"></script>
+    <script src="app/fire.js"></script>
+    <script src="app/level.js"></script>
+    <script src="app/app.js"></script>
+    <script>
+        function onGameLoad() {
+            /* ----====######====---- */
+            top.lev = __new(Level,1,function(){
+                top.lev.display('#display');
+                top.lev.start();
+            });
+            /* ----====######====---- */
+			
+			//win.showDevTools();
+	        }
+    </script>
+</body>
+</html>

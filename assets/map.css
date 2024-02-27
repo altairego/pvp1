@@ -1,0 +1,205 @@
+
+body {
+    background: rgb(175, 226, 183);
+    color: #666;
+    padding: 8px;
+}
+
+#display {
+    position: relative;
+}
+
+.maptile {
+    background-image: url("img/walls.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.fire {
+    background-image: url("img/fire.png");
+    background-position-y: -64px;
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+.fire.north {
+    background-position-y: 0;
+}
+
+.fire.est {
+    background-position-y: -32px;
+}
+
+.fire.west {
+    background-position-y: -96px;
+}
+
+.player {
+    background-position-x: -32px;
+    background-position-y: -72px;
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 36px;
+}
+
+.player.north {
+    background-position-y: 0;
+}
+
+.player.est {
+    background-position-y: -36px;
+}
+
+.player.west {
+    background-position-y: -108px;
+}
+
+.player.walking {
+    background-position-x: 0;
+    animation: playeranim 1s steps(2) infinite;
+}
+
+@keyframes playeranim {
+    50% { background-position-x: -64px; }
+    100% { background-position-x: 0; }
+}
+
+.player.red {
+    background-image: url("img/player/red.png");
+}
+
+.player.blue {
+    background-image: url("img/player/blue.png");
+}
+
+.player.green {
+    background-image: url("img/player/green.png");
+}
+
+.player.yellow {
+    background-image: url("img/player/yellow.png");
+}
+
+.free {
+    background-position-y: -32px;
+}
+
+.free.v2 {
+    background-position-x: -32px;
+}
+
+.free.v3 {
+    background-position-x: -64px;
+}
+
+.free.v4 {
+    background-position-x: -96px;
+}
+
+.wall {
+    background-position-x: -96px;
+    background-position-y: -320px;
+}
+
+.wall.red {
+    background-position-y: -64px;
+}
+
+.wall.green {
+    background-position-y: -128px;
+}
+
+.wall.blue {
+    background-position-y: -192px;
+}
+
+.wall.yellow {
+    background-position-y: -256px;
+}
+
+.camp.green {
+    background-position-x: -32px;
+}
+
+.camp.blue {
+    background-position-x: -64px;
+}
+
+.camp.yellow {
+    background-position-x: -96px;
+}
+
+.fence {
+    background-position-y: -320px;
+}
+
+.fence.red {
+    background-position-y: -64px;
+}
+
+.fence.green {
+    background-position-y: -128px;
+}
+
+.fence.blue {
+    background-position-y: -192px;
+}
+
+.fence.yellow {
+    background-position-y: -256px;
+}
+
+.gate {
+
+}
+
+.loot {
+    background-image: url("img/sprites.png");
+    background-position-x: 0;
+    background-position-y: 0;
+    display: block;
+    position: absolute;
+    z-index: 50;
+    width: 32px;
+    height: 32px;
+}
+
+.loot.f1 {
+    background-position-x: 0;
+}
+
+.loot.f2 {
+    background-position-x: -32px;
+}
+
+.loot.f3 {
+    background-position-x: -64px;
+}
+
+.loot.f4 {
+    background-position-x: -96px;
+}
+
+.loot.t1 {
+    background-position-y: -32px;
+    background-position-x: -32px;
+}
+
+.loot.t2 {
+    background-position-y: -32px;
+    background-position-x: -96px;
+}
+
+.loot.p1 {
+    background-position-y: -64px;
+}
+
+.loot.p2 {
+    background-position-y: -64px;
+    background-position-x: -32px;
+}
+
